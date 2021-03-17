@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite ">
+
+<!-- 	<test name="Email">
+		<classes>
+			<class name="Utilities.Email" />
+		</classes>
+	</test>
+ -->
+	<test name="Create_Order">
+		<classes>
+			<class name="Products.CreateProducts" />
+			<class name="Products.AddMilestones" />
+			<class name="Products.AddFeeSchedule" />
+			<class name="Client.createClient" />
+			<class name="Client.AddBranch" />
+			<class name="Client.AddProductToClientConfig" />
+			<class name="Vendors.CreateFirmConfig" />
+			<class name="Vendors.CreateFirmVendor" />
+			<class name="Vendors.AddServiceArea" />
+			<class name="Orders.CreateOrderConfig" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="Utilities.AfterSuite"></listener>
+	</listeners>
+</suite>
